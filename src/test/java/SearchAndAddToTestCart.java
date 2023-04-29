@@ -8,8 +8,12 @@ import org.example.LoginPage;
 import org.example.AssertionMessages;
 import org.example.Locators;
 
-@Listeners(TestListener.class)
+import java.net.MalformedURLException;
+
 public class SearchAndAddToTestCart extends BaseTest {
+
+    public SearchAndAddToTestCart() throws MalformedURLException {
+    }
 
     @Test
     public void searchForItemAndAddToCart() {
